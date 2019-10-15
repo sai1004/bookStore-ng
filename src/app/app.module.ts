@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { BTechPageComponent } from './pages/b-tech-page/b-tech-page.component';
 import { PharmacyPageComponent } from './pages/pharmacy-page/pharmacy-page.component';
 import { BComPageComponent } from './pages/b-com-page/b-com-page.component';
+import { BTechService } from './pages/b-tech-page/b-tech.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { BComPageComponent } from './pages/b-com-page/b-com-page.component';
     MatIconModule,
     MatListModule
   ],
-  providers: [],
+  providers: [BTechService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BTechService } from '../../pages/b-tech-page/b-tech.service';
 
 @Component({
   selector: 'app-b-tech-page',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BTechPageComponent implements OnInit {
 
-  constructor() { }
+  books: any[] = []
+
+  constructor(private bookservice:BTechService ) {
+    this.books = bookservice.getBooks()
+    // this.books = this.getBooks()
+   }
+
+
 
   ngOnInit() {
   }
