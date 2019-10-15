@@ -1,0 +1,8 @@
+mat-card{
+    margin-top: 10px;
+}
+
+.btn{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,95,218,1) 0%, rgba(0,212,255,1) 100%);
+    color: white;
+}

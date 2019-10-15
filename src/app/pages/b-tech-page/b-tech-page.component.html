@@ -1,16 +1,19 @@
-<p>b-tech-page sucks!</p>
+<section fxLayout="row wrap" fxLayoutAlign="space-around center">
+  <mat-card *ngFor="let item of books">
+    <img src="{{ item.img }}" alt="" />
+    <h3>{{ item.bookname }}</h3>
 
-<div *ngFor="let item of books">
+    <div fxLayout="row"  fxLayoutAlign="space-between center">
+      <div>
+        <h3>BRANCH: {{ item.branch }}</h3>
+        <h3>Price: {{ item.price | currency }}</h3>
+      </div>
+      <div>
+        <button mat-button class="btn">Add To Cart</button>
+      </div>
 
-    <h3> {{ item.id}} </h3>
-    <h3> {{ item.bookname}} </h3>
-    <h3> {{ item.branch}} </h3>
-    <h3> {{ item.Author}} </h3>
-    <h3> {{ item.price}} </h3>
-    <h3> {{ item.publisher}} </h3>
- 
-
-
-</div>
-
- 
+      <!-- <h3>{{ item.Author }}</h3> -->
+      <!-- <h3>{{ item.publisher }}</h3> -->
+    </div>
+  </mat-card>
+</section>
