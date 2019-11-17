@@ -21,6 +21,8 @@ import { BComPageComponent } from './pages/b-com-page/b-com-page.component';
 
 // =====================  services =============================//
 import { BTechService } from './pages/b-tech-page/b-tech.service';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { CartService } from './pages/cart-page/cart.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { BTechService } from './pages/b-tech-page/b-tech.service';
     MainNavComponent,
     BTechPageComponent,
     PharmacyPageComponent,
-    BComPageComponent
+    BComPageComponent,
+    CartPageComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,7 @@ import { BTechService } from './pages/b-tech-page/b-tech.service';
     MatListModule,
     SharedModule,MatFormFieldModule
   ],
-  providers: [BTechService],
+  providers: [BTechService,CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

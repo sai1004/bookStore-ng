@@ -1,0 +1,28 @@
+<div class="layout">
+  <div *ngFor="let item of showItems; let i = index">
+    <mat-card class="card">
+      <div fxLayout="row wrap" fxLayoutAlign="space-around">
+        <div fxFlex="100">
+          <div fxFlex="30">
+            <img src="{{ item.img }}" alt="book" height="200px" />
+            <br />
+            <strong>Publisher:</strong>
+            <span>{{ item.publisher }}</span>
+          </div>
+          <div fxFlex="50">
+            <strong> Book Name: </strong> <span>{{ item.bookname }}</span>
+            <br />
+            <strong> Author Name: </strong> <span>{{ item.Author }}</span>
+            <br />
+            <strong> Branch Name: </strong> <span>{{ item.branch }}</span>
+            <br />
+            <strong> Price: </strong> <span>{{ item.price }}</span>
+          </div>
+          <div fxFlex="20" Align="center">
+            <img src="../../../assets/remove.png" alt="remove" class="remove" (click)='remove(i)'  />
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

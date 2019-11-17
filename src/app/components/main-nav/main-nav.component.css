@@ -22,7 +22,14 @@
   flex: 1 1 auto;
 }
 
-input{
+input {
   height: 28px;
-  width: 200px
+  width: 300px;
+}
+
+.cart {
+  height: 45px;
+  margin: 25px;
+  cursor: pointer;
+  outline: none;
 }

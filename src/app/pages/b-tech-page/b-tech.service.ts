@@ -6,6 +6,8 @@ import { Injectable } from "@angular/core";
 export class BTechService {
   constructor() {}
 
+  cartItems: any[] = [];
+
   getBooks() {
     return [
       {
@@ -100,5 +102,14 @@ export class BTechService {
         publisher: "SIA"
       }
     ];
+  }
+
+  getCartItems() {
+    return this.cartItems;
+  }
+
+  saveToCart(itemFromBtech: any) {
+    console.log(itemFromBtech);
+    this.cartItems.push(itemFromBtech);
   }
 }

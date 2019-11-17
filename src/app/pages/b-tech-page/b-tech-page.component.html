@@ -3,13 +3,15 @@
     <img src="{{ item.img }}" alt="" />
     <h3>{{ item.bookname }}</h3>
 
-    <div fxLayout="row"  fxLayoutAlign="space-between center">
+    <div fxLayout="row" fxLayoutAlign="space-between center">
       <div>
         <h3>BRANCH: {{ item.branch }}</h3>
         <h3>Price: {{ item.price | currency }}</h3>
       </div>
       <div>
-        <button mat-button class="btn">Add To Cart</button>
+        <button mat-button class="btn" (click)="addToCart(item)">
+          Add To Cart
+        </button>
       </div>
 
       <!-- <h3>{{ item.Author }}</h3> -->
