@@ -27,7 +27,8 @@ import {
   MatSlideToggleModule,
   MatPaginatorModule,
   MatNativeDateModule,
-  MatDividerModule
+  MatDividerModule,
+  MatRippleModule
 } from "@angular/material";
   
 
@@ -58,7 +59,8 @@ import {
     MatSlideToggleModule,
     MatPaginatorModule,
     MatNativeDateModule,
-    MatDividerModule
+    MatDividerModule,
+    MatRippleModule
   ],
   
   exports: [
@@ -88,7 +90,8 @@ import {
     MatSlideToggleModule,
     MatPaginatorModule,
     MatNativeDateModule,
-    MatDividerModule
+    MatDividerModule,
+    MatRippleModule
   ]
 })
 

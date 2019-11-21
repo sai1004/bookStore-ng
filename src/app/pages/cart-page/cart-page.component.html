@@ -1,28 +1,88 @@
-<div class="layout">
-  <div *ngFor="let item of showItems; let i = index">
-    <mat-card class="card">
-      <div fxLayout="row wrap" fxLayoutAlign="space-around">
-        <div fxFlex="100">
-          <div fxFlex="30">
-            <img src="{{ item.img }}" alt="book" height="200px" />
-            <br />
-            <strong>Publisher:</strong>
-            <span>{{ item.publisher }}</span>
-          </div>
-          <div fxFlex="50">
-            <strong> Book Name: </strong> <span>{{ item.bookname }}</span>
-            <br />
-            <strong> Author Name: </strong> <span>{{ item.Author }}</span>
-            <br />
-            <strong> Branch Name: </strong> <span>{{ item.branch }}</span>
-            <br />
-            <strong> Price: </strong> <span>{{ item.price }}</span>
-          </div>
-          <div fxFlex="20" Align="center">
-            <img src="../../../assets/remove.png" alt="remove" class="remove" (click)='remove(i)'  />
+<main class="layout">
+  <div fxLayout="row wrap" fxLayoutAlign="space-around">
+    <!-- Products List -->
+    <section fxFlex="70">
+      <mat-card class="card" *ngFor="let item of showItems; let i = index">
+        <div fxLayout="row wrap" fxLayoutAlign="space-around">
+          <div fxFlex="100">
+            <div fxFlex="30">
+              <img src="{{ item.img }}" alt="book" height="200px" />
+              <br />
+              <strong>Publisher:</strong>
+              <span>{{ item.publisher }}</span>
+            </div>
+            <div fxFlex="50">
+              <strong> Book Name: </strong> <span>{{ item.bookname }}</span>
+              <br />
+              <strong> Author Name: </strong> <span>{{ item.Author }}</span>
+              <br />
+              <strong> Branch Name: </strong> <span>{{ item.branch }}</span>
+              <br />
+              <strong> Price: </strong> <span>{{ item.price }}</span>
+            </div>
+            <div fxFlex="20" fxFlexAlign="center">
+              <img
+                src="../../../assets/remove.png"
+                alt="remove"
+                matTooltip="Remove"
+                matTooltipPosition="above"
+                class="remove"
+                (click)="remove(i)"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </mat-card>
+      </mat-card>
+    </section>
+
+    <!-- Billing Section -->
+    <section fxFlex="30">
+      <mat-card class="billing" >
+        <mat-card-header>
+          <mat-card-title>PRICE DETAILS </mat-card-title>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <hr />
+        <div>
+          <mat-list>
+            <!-- <h3 mat-subheader>Folders</h3> -->
+            <mat-list-item>
+              <strong mat-line>Bag Total</strong>
+              <span class="demo-2"> 2599 </span>
+              <mat-divider [inset]="true"></mat-divider>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <!-- <h3 mat-subheader>Notes</h3> -->
+            <mat-list-item>
+              <h4 mat-line>Bag Discount</h4>
+              <p class="demo-2">-1000</p>
+            </mat-list-item>
+
+            <mat-list-item>
+              <h4 mat-line>Coupon Discount</h4>
+              <p class="demo-2">-100</p>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+
+            <mat-list-item>
+              <h4 mat-line>Order Total</h4>
+              <p class="demo-2">1499</p>
+            </mat-list-item>
+
+            <mat-list-item>
+              <h4 mat-line>Delivery Charges</h4>
+              <p class="demo-2">149</p>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+
+            <mat-list-item>
+              <h4 mat-line>Total</h4>
+              <p class="demo-2">1649</p>
+            </mat-list-item>
+          </mat-list>
+        </div>
+        <button mat-raised-button color='primary' class="CheckOut">Place Order</button>
+      </mat-card>
+    </section>
   </div>
-</div>
+</main>

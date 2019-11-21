@@ -16,7 +16,7 @@ export class BTechService {
         img: "../../../assets/mpmc.jpeg",
         branch: "ECE",
         Author: "vishweshwaraiah",
-        price: 300,
+        price: 444,
         publisher: "SIA"
       },
 
@@ -26,7 +26,7 @@ export class BTechService {
         img: "../../../assets/mpmc.jpeg",
         branch: "ECE",
         Author: "vishweshwaraiah",
-        price: 300,
+        price: 555,
         publisher: "SIA"
       },
       {
@@ -35,7 +35,7 @@ export class BTechService {
         img: "../../../assets/mpmc.jpeg",
         branch: "ECE",
         Author: "vishweshwaraiah",
-        price: 300,
+        price: 565,
         publisher: "SIA"
       },
       {
@@ -44,7 +44,7 @@ export class BTechService {
         img: "../../../assets/mpmc.jpeg",
         branch: "ECE",
         Author: "vishweshwaraiah",
-        price: 300,
+        price: 343,
         publisher: "SIA"
       },
       {
@@ -62,7 +62,7 @@ export class BTechService {
         img: "../../../assets/mpmc.jpeg",
         branch: "ECE",
         Author: "vishweshwaraiah",
-        price: 300,
+        price: 556,
         publisher: "SIA"
       },
       {
@@ -71,7 +71,7 @@ export class BTechService {
         img: "../../../assets/mpmc.jpeg",
         branch: "ECE",
         Author: "vishweshwaraiah",
-        price: 300,
+        price: 767,
         publisher: "SIA"
       },
       {
@@ -80,7 +80,7 @@ export class BTechService {
         img: "../../../assets/mpmc.jpeg",
         branch: "ECE",
         Author: "vishweshwaraiah",
-        price: 300,
+        price: 888,
         publisher: "SIA"
       },
       {
@@ -89,7 +89,7 @@ export class BTechService {
         img: "../../../assets/mpmc.jpeg",
         branch: "ECE",
         Author: "vishweshwaraiah",
-        price: 300,
+        price: 777,
         publisher: "SIA"
       },
       {
@@ -98,7 +98,7 @@ export class BTechService {
         img: "../../../assets/mpmc.jpeg",
         branch: "ECE",
         Author: "vishweshwaraiah",
-        price: 300,
+        price: 999,
         publisher: "SIA"
       }
     ];
