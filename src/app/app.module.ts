@@ -23,6 +23,7 @@ import { BComPageComponent } from './pages/b-com-page/b-com-page.component';
 import { BTechService } from './pages/b-tech-page/b-tech.service';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { CartService } from './pages/cart-page/cart.service';
+import { EmptyCartComponent } from './pages/empty-cart/empty-cart.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CartService } from './pages/cart-page/cart.service';
     BTechPageComponent,
     PharmacyPageComponent,
     BComPageComponent,
-    CartPageComponent
+    CartPageComponent,
+    EmptyCartComponent
   ],
   imports: [
     BrowserModule,

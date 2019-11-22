@@ -1,4 +1,7 @@
 <main class="layout">
+  <section *ngIf="showItems.length <= 0">
+    <app-empty-cart></app-empty-cart>
+  </section>
   <div fxLayout="row wrap" fxLayoutAlign="space-around">
     <!-- Products List -->
     <section fxFlex="70">
@@ -37,12 +40,13 @@
 
     <!-- Billing Section -->
     <section fxFlex="30">
-      <mat-card class="billing" >
+      <mat-card class="billing" *ngIf="showItems.length >= 1">
         <mat-card-header>
           <mat-card-title>PRICE DETAILS </mat-card-title>
         </mat-card-header>
         <mat-divider></mat-divider>
         <hr />
+        <!-- list items -->
         <div>
           <mat-list>
             <!-- <h3 mat-subheader>Folders</h3> -->
@@ -51,7 +55,7 @@
               <span class="demo-2"> 2599 </span>
               <mat-divider [inset]="true"></mat-divider>
             </mat-list-item>
-            <mat-divider></mat-divider>
+
             <!-- <h3 mat-subheader>Notes</h3> -->
             <mat-list-item>
               <h4 mat-line>Bag Discount</h4>
@@ -81,7 +85,9 @@
             </mat-list-item>
           </mat-list>
         </div>
-        <button mat-raised-button color='primary' class="CheckOut">Place Order</button>
+        <button mat-raised-button color="primary" class="CheckOut">
+          Place Order
+        </button>
       </mat-card>
     </section>
   </div>

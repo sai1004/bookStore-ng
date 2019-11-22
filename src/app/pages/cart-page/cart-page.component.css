@@ -20,7 +20,7 @@
 }
 
 .billing {
-  height: 60vh;
+  height: auto;
   position: fixed;
   width: 23%;
 }
